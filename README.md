@@ -26,6 +26,12 @@ Set the `folder` variable to the folder containing the classes and the `output` 
 
 Once all is set, just run uml.m. You can change the output format by modifying the call to the dot executable at the end of uml.m.
 
+Example
+-------
+
+When running MatlabUML on the example classes from [UMLgui](http://de.mathworks.com/matlabcentral/fileexchange/44742-umlgui) it generates the following result.
+![Example](example.png)
+
 Limitations
 -----------
 

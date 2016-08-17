@@ -16,13 +16,13 @@ Features
   * create UML class diagram from code automatically
   * output into any format supported by graphviz (png, pdf, svg, ...)
   * supports public and private properties and methods
-  * supports multiple inhertiance
+  * supports multiple inheritance
   * supports recursive handling of classes in subfolders
   * uses MATLAB's meta.class feature instead of employing its own parser
 
 Usage
 -----
-Set the `folder` variable to the folder containing the classes and the `output` variable to the desired output filename (withot extension). Make sure that the `dotExecutable` Variable points to the path where the dot tool from graphviz can be found.
+Set the `folder` variable to the folder containing the classes and the `output` variable to the desired output filename (without extension). Make sure that the `dotExecutable` Variable points to the path where the dot tool from graphviz can be found.
 
 Once all is set, just run uml.m. You can change the output format by modifying the call to the dot executable at the end of uml.m.
 

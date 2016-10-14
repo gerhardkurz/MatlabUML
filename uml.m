@@ -68,7 +68,10 @@ for i=1:length(files)
     currentclass = meta.class.fromName(classname);
     if ~isempty(currentclass)
         for j=1:length(currentclass.SuperclassList)
-            fprintf(fID, '%s -> %s [dir=back]\n',  currentclass.SuperclassList(j).Name, classname);
+            if isempty(strfind(currentclass.SuperclassList(j).Name, 'matlab.mixin'))
+                %ignore classes from matlab.mixin
+                fprintf(fID, '%s -> %s [dir=back]\n',  currentclass.SuperclassList(j).Name, classname);
+            end
         end
     end
 end
